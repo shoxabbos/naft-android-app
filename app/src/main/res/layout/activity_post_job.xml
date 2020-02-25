@@ -229,7 +229,7 @@
                         android:inputType="number"
                         android:background="@null"
                         android:paddingLeft="10dp"
-                        android:hint="Project Cost"
+                        android:hint="Стоимость"
                         android:textSize="13dp"/>
 
 

@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#323232"
                         android:maxLines="1"
-                        android:text="Fixed"
+                        android:text="Фиксированный"
                         android:layout_alignParentRight="true"
                         android:fontFamily="@font/font_opensans"
                         android:layout_marginRight="20dp"
@@ -347,7 +347,7 @@
                     android:fontFamily="@font/font_medium"
                     android:layout_margin="15dp"
                     android:textColor="#323232"
-                    android:text="Skills Required"/>
+                    android:text="Требуемые навыки"/>
 
                 <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -381,7 +381,7 @@
                     android:fontFamily="@font/font_medium"
                     android:layout_margin="15dp"
                     android:textColor="#323232"
-                    android:text="Attachments"/>
+                    android:text="Прикрепление документы"/>
 
                 <com.cooltechworks.views.shimmer.ShimmerRecyclerView
                     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -415,7 +415,7 @@
                         android:id="@+id/ui_send_proposal"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
-                        android:text="Send Proposal"
+                        android:text="Отправить предложение"
 
                         android:textAllCaps="false"
                         android:textColor="@color/white"

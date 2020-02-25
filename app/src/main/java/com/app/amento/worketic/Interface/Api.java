@@ -34,7 +34,7 @@ import retrofit2.http.Query;
 
 public interface Api {
 
-    String BASE_SITE = "https://naft.uz/";
+    String BASE_SITE = "http://naft.uz/";
 
     String BASE_URL = BASE_SITE + "api/v1/";
 

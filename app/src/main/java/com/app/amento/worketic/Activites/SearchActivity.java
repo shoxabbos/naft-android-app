@@ -439,7 +439,7 @@ public class SearchActivity extends AppCompatActivity {
                 arrayList_type =response.body();
                 for (ProjectType C:arrayList_type){
                     if (C.getTitle() != null){
-                        Log.d("Project Type" , C.getTitle() );
+                        Log.d("Тип проекта" , C.getTitle() );
                         final String[] languageName = new String[arrayList_type.size()];
                         for (int i=0 ; i<arrayList_type.size() ; i++){
                             languageName[i]= arrayList_type.get(i).getTitle();

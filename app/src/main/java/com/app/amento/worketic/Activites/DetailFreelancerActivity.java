@@ -174,7 +174,7 @@ public class DetailFreelancerActivity extends BaseActivity {
         wt_country_name.setText(Html.fromHtml(featured.getLocation().getCountry()).toString());
         wt_member_since.setText(Html.fromHtml(featured.getMemberSince()).toString());
         if (featured.getWtAverageRating().equals(0)){
-            wt_feedback.setText("No Feedback");
+            wt_feedback.setText("Нет отзывов");
         }else {
 
             wt_feedback.setText(featured.getWtAverageRating() + "/5 (" + featured.getWtTotalRating()+ " " + "Feedback)");

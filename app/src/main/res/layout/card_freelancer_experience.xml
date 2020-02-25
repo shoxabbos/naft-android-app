@@ -28,7 +28,7 @@
                 android:textSize="16dp"
                 android:textColor="#323232"
                 android:fontFamily="@font/font_regular"
-                android:text="Web and Apps Project Manager..."
+                android:text="Менеджер проектов веб и приложений..."
                 />
 
             <LinearLayout

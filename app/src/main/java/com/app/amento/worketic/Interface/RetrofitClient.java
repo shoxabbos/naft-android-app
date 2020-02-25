@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 
 public class RetrofitClient {
-    private static  final String BASE_URL = "https://naft.uz/api/v1/";
+    private static  final String BASE_URL = "http://naft.uz/api/v1/";
     private static final String CACHE_CONTROL = "Cache-Control";
     private static  RetrofitClient mInstance;
     private Retrofit retrofit;

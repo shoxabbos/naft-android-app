@@ -262,7 +262,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="#323232"
-                                android:text="Feedback"
+                                android:text="Отзывы"
                                 android:layout_alignParentLeft="true"
                                 android:fontFamily="@font/font_medium"
                                 android:layout_marginLeft="20dp"
@@ -302,7 +302,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="#323232"
-                                android:text="Member Since"
+                                android:text="Дата регистрации"
                                 android:layout_alignParentLeft="true"
                                 android:fontFamily="@font/font_medium"
                                 android:layout_marginLeft="20dp"
@@ -351,7 +351,7 @@
                     android:fontFamily="@font/font_medium"
                     android:layout_margin="15dp"
                     android:textColor="#323232"
-                    android:text="About"/>
+                    android:text="О пользователе"/>
 
 
                 <TextView
@@ -377,7 +377,7 @@
                     android:layout_marginRight="15dp"
                     android:layout_marginLeft="15dp"
                     android:textColor="#323232"
-                    android:text="Project Status"/>
+                    android:text="Статистика проектов"/>
 
 
                 <LinearLayout
@@ -416,7 +416,7 @@
                             <TextView
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:text="Ongoing \n Projects"
+                                android:text="Текущие \n проекты"
                                 android:fontFamily="@font/font_regular"
                                 android:textColor="#323232"
                                 android:gravity="center"
@@ -451,7 +451,7 @@
                             <TextView
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:text="Completed \n Projects"
+                                android:text="Завершенные \n проекты"
                                 android:fontFamily="@font/font_regular"
                                 android:textColor="#323232"
                                 android:gravity="center"
@@ -504,7 +504,7 @@
                             <TextView
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:text="Cancelled \n Projects"
+                                android:text="Отмененные \n проекты"
                                 android:gravity="center"
                                 android:fontFamily="@font/font_regular"
                                 android:textColor="#323232"
@@ -540,7 +540,7 @@
                             <TextView
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:text="Total \n Earning"
+                                android:text="Всего \n заработано"
                                 android:gravity="center"
                                 android:fontFamily="@font/font_regular"
                                 android:textColor="#323232"
@@ -569,7 +569,7 @@
                         android:id="@+id/ui_send_offer_freelancer"
                         android:layout_width="160dp"
                         android:layout_height="45dp"
-                        android:text="Send Offer"
+                        android:text="Отправить предложение"
                         android:layout_centerHorizontal="true"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
@@ -619,7 +619,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="30dp"
                         android:textColor="#323232"
-                        android:text="My Skills"/>
+                        android:text="Навыки"/>
 
 
                     <com.cooltechworks.views.shimmer.ShimmerRecyclerView
@@ -673,7 +673,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="30dp"
                         android:textColor="#323232"
-                        android:text="Awards and Certifications"/>
+                        android:text="Награды и сертификаты"/>
 
 
 
@@ -795,7 +795,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="30dp"
                         android:textColor="#323232"
-                        android:text="Crafted Projects"/>
+                        android:text="Проекты"/>
 
 
 
@@ -911,7 +911,7 @@
                         android:layout_marginTop="30dp"
                         android:layout_marginBottom="30dp"
                         android:textColor="#323232"
-                        android:text="Education"/>
+                        android:text="Образование"/>
 
 
 

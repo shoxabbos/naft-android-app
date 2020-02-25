@@ -409,7 +409,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="45dp"
-                            android:text="Project Length:"
+                            android:text="Продолжительность проекта:"
                             android:textSize="15dp"
                             android:textColor="#999999"
                             android:gravity="center"
@@ -459,7 +459,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="45dp"
-                            android:text="Project Type:"
+                            android:text="Тип проекта:"
                             android:textSize="15dp"
                             android:textColor="#999999"
                             android:gravity="center"
