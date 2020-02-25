@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SearchActivity">
+
+    <include
+        layout="@layout/app_bar_search"
+        android:id="@+id/ui_search_layout"
+        ></include>
+
+    <ScrollView
+        android:layout_below="@+id/ui_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/sample_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Narrow Your Search"
+                android:layout_margin="15dp"
+                android:textColor="#323232"
+                android:textSize="20dp"
+                android:fontFamily="@font/font_medium"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Narrow Your Search"
+                    android:layout_margin="15dp"
+                    android:textColor="#323232"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/font_opensans"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:id="@+id/ui_radiogroup_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/ui_freelancer_radiobtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:checked="true"
+                            android:textSize="13dp"
+                            android:textDirection="locale"
+                            android:layout_weight="1"
+                            android:textColor="#999999"
+                            android:buttonTint="@color/colorPrimary"
+                            android:fontFamily="@font/font_regular"
+                            android:text="Freelancer"/>
+
+                        <RadioButton
+                            android:id="@+id/ui_job_radiobtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_regular"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:textColor="#999999"
+                            android:layout_weight="1"
+                            android:buttonTint="@color/colorPrimary"
+
+                            android:text="Latest Jobs" />
+
+                        <RadioButton
+                            android:id="@+id/ui_employer_radiobtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_regular"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="13dp"
+                            android:layout_marginRight="10dp"
+                            android:buttonTint="@color/colorPrimary"
+                            android:textColor="#999999"
+                            android:text="Employer" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dddddd"
+                    />
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_keyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ui_search_keyword"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:textSize="15dp"
+                        android:hint="Type Keyword here"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_margin="5dp"/>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Category:"
+                            android:textColor="#999999"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_category_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_skill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Skill:"
+                            android:textColor="#999999"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_skill_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Адрес:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_location_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_hourlyRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Hourly Rate:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            />
+
+                        <Spinner
+                            android:id="@+id/ui_hourly_rate_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </Spinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_freelancerType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Freelancer Type:"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"
+                            android:textColor="#999999"
+                            />
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_freelancer_level_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_projectLength"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Project Length:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_project_length_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_projectType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="Project Type:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_project_type_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            >
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_englishLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="English Level:"
+                            android:textColor="#999999"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_english_level_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1">
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_numberEmplyee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="No of Employee:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_no_of_employee_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1">
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_search_layout_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:text="language:"
+                            android:textSize="15dp"
+                            android:textColor="#999999"
+                            android:gravity="center"
+                            android:paddingLeft="15dp"/>
+                        <io.apptik.widget.multiselectspinner.MultiSelectSpinner
+                            android:id="@+id/ui_language_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="45dp"
+                            android:layout_marginLeft="15sp"
+                            android:fontFamily="@font/font_medium"
+                            android:layout_marginBottom="5sp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1">
+                        </io.apptik.widget.multiselectspinner.MultiSelectSpinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#dddddd"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wizard_text"
+                    android:textColor="#323232"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/font_opensans"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+                <Button
+                    android:id="@+id/ui_search_freelancer"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:text="Apply Filter"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_medium"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/complete_button_layout"
+                    android:padding="5dp"
+                    android:elevation="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+                <Button
+                    android:id="@+id/ui_search_jobs"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:text="Apply Filter"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_medium"
+                    android:layout_marginBottom="15dp"
+                    android:visibility="gone"
+                    android:background="@drawable/complete_button_layout"
+                    android:padding="5dp"
+                    android:elevation="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+                <Button
+                    android:id="@+id/ui_search_company"
+                    android:layout_width="160dp"
+                    android:layout_height="45dp"
+                    android:text="Apply Filter"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_medium"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/complete_button_layout"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:elevation="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ProgressBar
+            android:id="@+id/ui_bookloading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

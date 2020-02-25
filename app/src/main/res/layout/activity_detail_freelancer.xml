@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context=".Activites.DetailFreelancerActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_detail_app_bar"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/background_home_app_bar">
+
+            <TextView
+                android:id="@+id/btn_restore_purchases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:fontFamily="@font/font_opensans"
+                android:textSize="13dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:hint="@string/app_bar_home_text"
+                android:textColorHint="@color/white"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_below="@+id/ui_detail_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/ui_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ui_freelancer_detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/image_nav_main"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#67000000"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ui_card_main_detail"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                app:cardBackgroundColor="#fafafa"
+                android:elevation="10dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/ui_info_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@color/white">
+
+
+                        <ImageView
+                            android:id="@+id/ui_freelancer_badge_color"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/featuredcatimageone"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/ui_freelancer_badge_icon"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/elogo"
+                            android:layout_margin="1dp"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/detail_profile_image"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="20dp"
+                            />
+
+                        <LinearLayout
+
+                            android:gravity="start|center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginRight="15dp"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="8px"
+                                    android:src="@drawable/verifiedimage"/>
+
+                                <TextView
+                                    android:id="@+id/ui_freelancer_detail_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/font_regular"
+                                    android:maxLines="1"
+                                    android:textSize="13dp"
+                                    android:textColor="#323232"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_medium"
+                                android:maxLines="2"
+                                android:textSize="15dp"
+                                android:textColor="#323232"/>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ui_info_main"
+                        android:orientation="vertical">
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:text="Почасовая ставка"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/font_medium"
+                                android:layout_marginLeft="20dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_hourly_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:maxLines="1"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/font_opensans"
+                                android:layout_marginRight="20dp"
+
+
+                                />
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dddddd"
+                            />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:text="Местоположение"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/font_medium"
+                                android:layout_marginLeft="20dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_country_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:maxLines="1"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/font_opensans"
+                                android:layout_marginRight="20dp"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dddddd"
+                            />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:text="Feedback"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/font_medium"
+                                android:layout_marginLeft="20dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_feedback"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:maxLines="1"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/font_opensans"
+                                android:layout_marginRight="20dp"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#dddddd"
+                            />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:text="Member Since"
+                                android:layout_alignParentLeft="true"
+                                android:fontFamily="@font/font_medium"
+                                android:layout_marginLeft="20dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_member_since"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#323232"
+                                android:maxLines="1"
+                                android:layout_alignParentRight="true"
+                                android:fontFamily="@font/font_opensans"
+                                android:layout_marginRight="20dp"
+
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_below="@+id/ui_card_main_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ui_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/font_medium"
+                    android:layout_margin="15dp"
+                    android:textColor="#323232"
+                    android:text="About"/>
+
+
+                <TextView
+                    android:id="@+id/ui_freelancer_detail_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#323232"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/font_opensans"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/font_medium"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#323232"
+                    android:text="Project Status"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="#fafafa"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_ongoing_projects"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/font_medium"
+                                android:textColor="#2ecc71"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Ongoing \n Projects"
+                                android:fontFamily="@font/font_regular"
+                                android:textColor="#323232"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12dp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_completed_projects"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/font_medium"
+                                android:textColor="#3498db"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Completed \n Projects"
+                                android:fontFamily="@font/font_regular"
+                                android:textColor="#323232"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_detail_cancelled_projects"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/font_medium"
+                                android:textColor="#e67e22"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Cancelled \n Projects"
+                                android:gravity="center"
+                                android:fontFamily="@font/font_regular"
+                                android:textColor="#323232"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12dp"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:background="#fafafa"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/total_earning"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/font_medium"
+                                android:textColor="#9b59b6"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Total \n Earning"
+                                android:gravity="center"
+                                android:fontFamily="@font/font_regular"
+                                android:textColor="#323232"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:textSize="12dp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ui_send_offer_freelancer"
+                        android:layout_width="160dp"
+                        android:layout_height="45dp"
+                        android:text="Send Offer"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font_medium"
+                        android:background="@drawable/complete_button_layout"
+                        android:elevation="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center" />
+
+                    <ImageView
+                        android:id="@+id/ui_share_freelancer"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_toRightOf="@+id/ui_follow_company"
+                        android:src="@drawable/ic_share_black_24dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font_medium"
+                        android:background="@drawable/job_single_button_background_two"
+                        android:padding="10dp"
+                        android:layout_marginLeft="15dp"
+
+                        />
+                </LinearLayout>
+
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#dddddd"-->
+                <!--/>-->
+
+                <LinearLayout
+                    android:id="@+id/ui_skill_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="My Skills"/>
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list_skill"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:fontFamily="@font/font_medium"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:textColor="#55acee"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Show All"/>-->
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#dddddd"-->
+                    <!--/>-->
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/uiaward_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="Awards and Certifications"/>
+
+
+
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:fontFamily="@font/font_medium"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:textColor="#55acee"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Show All"/>-->
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#dddddd"-->
+                    <!--/>-->
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_review_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="Client Feedback"/>
+
+
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list_review"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:fontFamily="@font/font_medium"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:textColor="#55acee"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Show All"/>-->
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#dddddd"-->
+                    <!--/>-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_projects_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="Crafted Projects"/>
+
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list_projects"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:fontFamily="@font/font_medium"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:textColor="#55acee"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Show All"/>-->
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#dddddd"-->
+                    <!--/>-->
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_experience_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="Experience"/>
+
+
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:fontFamily="@font/font_medium"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:textColor="#55acee"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Show All"/>-->
+
+
+                    <!--<View-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#dddddd"-->
+                    <!--/>-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ui_education_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:textColor="#323232"
+                        android:text="Education"/>
+
+
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/list_education"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        android:layout_marginBottom="30dp"
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

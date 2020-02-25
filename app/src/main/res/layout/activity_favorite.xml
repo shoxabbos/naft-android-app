@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activites.FavoriteActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_favourite_toolbar"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:text="Favourite Listing"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/font_medium"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ui_favourite_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <RadioGroup
+                android:id="@+id/ui_radiogroup_signup_fav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/ui_freelancer_radiobtn_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="true"
+                    android:textSize="13dp"
+                    android:textDirection="locale"
+                    android:layout_weight="1"
+                    android:textColor="#999999"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/font_regular"
+                    android:text="Freelancer"/>
+
+                <RadioButton
+                    android:id="@+id/ui_job_radiobtn_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_regular"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:textColor="#999999"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary"
+
+                    android:text="Latest Jobs" />
+
+                <RadioButton
+                    android:id="@+id/ui_employer_radiobtn_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_regular"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:layout_marginRight="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textColor="#999999"
+                    android:text="Employer" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ui_freelancer_recycler_view">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ui_job_recycler_view">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ui_employeer_recycler_view">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ProgressBar
+            android:id="@+id/ui_bookloading"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:background="@drawable/circle_shape"
+            android:elevation="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/list_no_data"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/nodata"
+            android:gravity="center"
+            android:fontFamily="@font/font_medium"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

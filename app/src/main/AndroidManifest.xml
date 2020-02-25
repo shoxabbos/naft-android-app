@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uz.itmaker.naft">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Activites.WorkternApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logoapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".Activites.PostJobActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"></activity>
+        <activity android:name=".Activites.WebViewActivity" />
+        <activity android:name=".Activites.SendOffer" />
+        <activity android:name=".Activites.JobReportActivity" />
+        <activity android:name=".Activites.FavoriteActivity" />
+        <activity
+            android:name=".Activites.SendProposalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".Activites.SearchResultCompany" />
+        <activity android:name=".Activites.SearchResultJob" />
+        <activity android:name=".Activites.SearchResultFreelancer" />
+        <activity android:name=".Activites.SignupActivity" />
+        <activity android:name=".Activites.SearchResultActivity" />
+        <activity android:name=".Activites.DetailCompanyActivity" />
+        <activity android:name=".Activites.DetailJobActivity" />
+        <activity android:name=".Activites.DetailFreelancerActivity" />
+        <activity android:name=".Activites.ForgetPassowrdActivity" />
+        <activity
+            android:name=".Activites.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_place_api" />
+
+        <activity
+            android:name=".Activites.SearchActivity"
+            android:parentActivityName=".Activites.HomeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".Activites.HomeSearchResult"
+            android:parentActivityName=".Activites.SearchActivity" />
+        <activity
+            android:name=".Activites.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activites.WizardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activites.HomeActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

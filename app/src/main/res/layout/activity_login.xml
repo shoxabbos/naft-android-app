@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.LoginActivity">
+
+    <include
+        android:id="@+id/login_page_toolbar"
+        layout="@layout/app_bar_login" />
+
+    <LinearLayout
+        android:id="@+id/ui_login_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/ui_loginlogo"
+                        android:layout_width="130sp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/login_page_toolbar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/logologin" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10sp"
+                        android:fontFamily="@font/font_opensans"
+                        android:gravity="center"
+                        android:text="@string/wizard_text"
+                        android:textSize="13sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginRight="15sp"
+                        android:background="@drawable/linear_backgraound"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/ui_login_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="45sp"
+                            android:background="@null"
+                            android:drawableRight="@drawable/ic_envelope"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/font_opensans"
+                            android:hint="Электронная почта"
+                            android:textSize="13dp"
+                            android:imeActionLabel="Log In"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColorHint="#807f7f" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.6dp"
+                            android:background="#c0c0c0" />
+
+                        <EditText
+                            android:id="@+id/ui_login_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="45sp"
+                            android:layout_below="@+id/ui_login_email"
+                            android:background="@null"
+                            android:drawableRight="@drawable/ic_lock"
+                            android:drawablePadding="5dp"
+                            android:fontFamily="@font/font_opensans"
+                            android:hint="Пароль"
+                            android:textSize="13dp"
+                            android:imeActionLabel="Log In"
+                            android:imeOptions="actionUnspecified"
+                            android:inputType="textPassword"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColorHint="#807f7f" />
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/ui_signin"
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20sp"
+
+                        android:background="@drawable/complete_button_layout"
+                        android:fontFamily="@font/font_medium"
+                        android:gravity="center"
+                        android:text="Войти в систему"
+                        android:textSize="13dp"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/ui_btn_forgot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/font_opensans"
+                        android:text="Забыли пароль?"
+                        android:textAllCaps="false"
+                        android:textColor="#616161"
+                        android:textSize="13sp"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ui_login_linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/ui_crateaccount_text"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/font_opensans"
+            android:gravity="center"
+            android:text="@string/login_bottom_text"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

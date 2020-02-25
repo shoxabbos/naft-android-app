@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Главная"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_jobs"
+        android:enabled="true"
+        android:icon="@drawable/ic_appointment"
+        android:title="Работы"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_freelancer"
+        android:enabled="true"
+        android:icon="@drawable/ic_avatar"
+        android:title="Фрилансеры"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_company"
+        android:enabled="true"
+        android:icon="@drawable/ic_briefcase"
+        android:title="Компании"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_services"
+        android:title="Настройки"
+        app:showAsAction="ifRoom" />
+</menu>

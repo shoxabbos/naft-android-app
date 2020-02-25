@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/ui_skill_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:text="PHP"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/font_medium"
+                android:layout_marginLeft="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/ui_skill_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:text="90%"
+                android:maxLines="1"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/font_opensans"
+                android:layout_marginRight="20dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            style="@style/progress_weight_container">
+
+            <com.beardedhen.androidbootstrap.BootstrapProgressBar
+                android:id="@+id/progress_striped_animated"
+                style="@style/progress_example"
+                android:layout_height="8dp"
+                android:layout_width="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                app:roundedCorners="true"
+                app:animated="true"
+                android:background="#fafafa"
+                app:bootstrapBrand="warning"
+                app:bootstrapProgress="78"
+                app:striped="true"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

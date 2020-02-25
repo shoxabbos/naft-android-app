@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SignupActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui_app_bar_signup"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:text="Зарегистрироваться"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/font_medium"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <WebView
+        android:id="@+id/ui_signup_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ui_app_bar_signup"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/ui_login_linearlayout2"></WebView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ui_login_linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:elevation="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+
+            android:id="@+id/ui_crateaccount_text"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2sp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/font_opensans"
+            android:gravity="center"
+            android:text="Уже есть аккаунт? войти в систему "
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

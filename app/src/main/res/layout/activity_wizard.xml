@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wizardbackground"
+    tools:context=".Activites.WizardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/wt_wizard_layout"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_marginTop="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14dp"
+                android:fontFamily="@font/font_opensans"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="@string/wizard_text"/>
+
+
+
+            <LinearLayout
+                android:id="@+id/ui_slide_dots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ui_skip_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:fontFamily="@font/font_regular"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="Пропустить"/>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70px"
+            android:gravity="center"
+            android:layout_below="@+id/wt_wizard_layout"
+            android:layout_alignParentBottom="true">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentBottom="true">
+
+
+            </android.support.v4.view.ViewPager>
+            
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

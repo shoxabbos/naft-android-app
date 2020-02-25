@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashbackground"
+    tools:context=".Activites.SplashActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a4000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"/>
+
+
+            <com.agrawalsuneet.dotsloader.loaders.TrailingCircularDotsLoader
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:trailingcircular_animDelay="200"
+                app:trailingcircular_animDuration="900"
+                app:trailingcircular_bigCircleRadius="10dp"
+                app:trailingcircular_dotsColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                app:trailingcircular_dotsRadius="1.5dp"
+                app:trailingcircular_noOfTrailingDots="5" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

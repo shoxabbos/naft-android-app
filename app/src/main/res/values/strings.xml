@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Naft</string>
+    <string name="wizard_text">NAFT поможет быстро найти надежных исполнителей для выполнения бытовых и фриланс заданий. NAFT - это фриланс биржа для любых услуг.</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+    <string name="app_bar_home_text">Поиск</string>
+    <string name="home_main_text">Категории</string>
+    <string name="home_main_text_sec">Работа по категориям</string>
+    <string name="text_cat">Graphics \nand design</string>
+    <string name="featured_text">VIP фрилансеры</string>
+    <string name="featured_text_sec">Люди которые могут вам помочь</string>
+    <string name="string_internet_connection_not_available">Internet Connection Not Available</string>
+    <string name="string_some_thing_wrong">Что то пошло не так.</string>
+    <string name="internal_storage">Внутреннее хранилище</string>
+    <string name="chooser_title">Выбрать файлы</string>
+    <string name="default_locale">en</string>
+    <string name="guest">Гость</string>
+    <string name="greetings">Добро пожаловать</string>
+    <string name="about_us">О нас</string>
+    <string name="contact_us">Поддержка</string>
+    <string name="google_place_api">AIzaSyCoMtd7r21tetH1XMUTP9iee4R6qSGbn4k</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_bottom_text">Еще нет аккаунта? <b>Зарегистрироваться</b> </string>
+    <string name="button_text_setting">Сменить баннер</string>
+    <string name="profile_location">Широты и долготы обязательны для показа этого пользователя на карте, а также для поиска на основе местоположения</string>
+    <string name="dummy_job_text">Consectetur adipisicing elit, sedsmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimame quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repit in voluptate velit esse cillum dolore eu fugiat nulla pariri Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.\n\n
+
+   Sed quia consequuntur magni dolores<br></br>
+   Ratione voluptatem sequi nesciunt<br></br>
+   Neque porro quisquam est<br></br>
+   Qui dolorem ipsum quia dolor sit amet<br></br>
+<br></br>
+Sed ut perspiciatis unde omnis iste natus error sitatatem accusantium doloremque laudantium, totam rem aciam eaque ipsa quae ab illo inventore veritatis et quasi archo beatae vitae dicta sunt explicabo. Nemo enim ipsam vim quia voluptas sit aspernatur aut odit aut fugit.</string>
+    <string name="dummy_text">Consectetur adipisicing elit, sedsmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minimame quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repit in voluptate velit esse cillum dolore eu fugiat nulla pariri Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim. \n\n
+
+Sed ut perspiciatis unde omnis iste natus error sitatatem accusantium doloremque laudantium, totam rem aciam eaque ipsa quae ab illo inventore veritatis et quasi archo beatae vitae dicta sunt explicabo. Nemo enim ipsam vim quia voluptas sit aspernatur aut odit aut fugit.</string>
+</resources>

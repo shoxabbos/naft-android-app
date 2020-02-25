@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ui_experience_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:maxLines="1"
+                android:textSize="16dp"
+                android:textColor="#323232"
+                android:fontFamily="@font/font_regular"
+                android:text="Web and Apps Project Manager..."
+                />
+
+            <LinearLayout
+                android:id="@+id/ui_experience_card"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:id="@+id/ui_experience_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_opensans"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_account_balance_black_24dp"
+                    android:maxLines="1"
+                    android:text="Amento Tech"
+                    android:textSize="12dp"
+                    android:textColor="#323232"/>
+
+                <!--<View-->
+                    <!--android:layout_width="1dp"-->
+                    <!--android:layout_height="12dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:background="#323232" />-->
+
+
+                <TextView
+                    android:id="@+id/ui_experience_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_opensans"
+                    android:text="Aug 2017- Till Now"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+
+                    android:maxLines="1"
+                    android:drawablePadding="5dp"
+                    android:textSize="12dp"
+                    android:textColor="#323232"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/ui_experience_content"
+                android:layout_below="@+id/ui_experience_card"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wizard_text"
+                android:textColor="#323232"
+                android:textSize="15dp"
+
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/font_opensans"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

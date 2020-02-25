@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+
+
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:id="@+id/ui_freelancer_card"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:elevation="15dp"
+            card_view:cardMaxElevation="5dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="13dp"
+            app:cardBackgroundColor="#ffffff"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:cardPreventCornerOverlap="false"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:id="@+id/featured_image"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/featuredcatimageone"
+                    />
+                <ImageView
+                    android:id="@+id/featured_badge"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/elogo"
+                    android:layout_margin="2dp"
+                    />
+
+
+                <LinearLayout
+                    android:id="@+id/ui_layout_freelancer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="10dp">
+
+                        <ImageView
+                            android:id="@+id/ui_freelancer_main_profile_image"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start|center"
+                        android:gravity="start|center"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="22px"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/ui_freelancer_main_verified_image"
+                                android:layout_width="12dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="8px"
+                                android:visibility="gone"
+                                android:src="@drawable/ic_check_circle_black_24dp"/>
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_main_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_regular"
+                                android:maxLines="1"
+
+                                android:textSize="13dp"
+                                android:textColor="#323232"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/ui_freelancer_main_tagline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_regular"
+
+                            android:maxLines="1"
+                            android:textSize="15dp"
+                            android:textColor="#323232"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_main_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_opensans"
+                                android:maxLines="1"
+                                android:layout_weight="1"
+                                android:layout_marginRight="24px"
+                                android:textSize="13dp"
+
+                                />
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="24px"
+
+                                android:layout_gravity="center"
+                                android:background="#c0c0c0" />
+
+                            <ImageView
+                                android:id="@+id/ui_freelancer_main_profile_flag"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_weight="1"
+
+                                android:paddingTop="4dp"
+                                android:layout_marginRight="10px"
+                                />
+
+                            <TextView
+                                android:id="@+id/ui_freelancer_main_countery_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/font_opensans"
+                                android:maxLines="1"
+                                android:layout_weight="1"
+                                android:textSize="13dp"
+                                android:layout_marginLeft="5dp"
+
+
+                                />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/ui_fav_image"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="1px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:src="@drawable/fav"
+        android:padding="1dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/ui_unfav_image"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="1px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/unfav"
+        android:padding="1dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/ui_bookloading"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="1px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/circle_shape"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:padding="5dp"
+        />
+
+</RelativeLayout>

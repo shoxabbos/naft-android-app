@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.SendProposalActivity">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ui_app_bar_send_proposal"
+            android:elevation="10dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:text="Send Proposal"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/font_medium"
+                android:textSize="20sp"
+                android:textColor="#ffffff" />
+
+
+        </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/ui_layout"
+        android:layout_below="@+id/ui_app_bar_send_proposal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_below="@+id/ui_app_bar_send_proposal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/font_medium"
+                android:layout_margin="15dp"
+                android:textColor="#323232"
+                android:text="Send Proposal"/>
+            <LinearLayout
+                android:id="@+id/ui_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/linear_backgraound">
+
+                <EditText
+                    android:id="@+id/ui_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    android:hint="0.0$"
+                    android:layout_margin="15dp"
+                    android:textStyle="bold"
+                    android:textColorHint="#00cc8d"
+                    android:textColor="#00cc8d"
+                    android:fontFamily="@font/font_regular"
+                    android:background="@null"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_below="@+id/ui_app_bar_send_proposal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:fontFamily="@font/font_opensans"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:textColor="#323232"
+                android:text="20% of total amount would be service charges"/>
+
+            <LinearLayout
+                android:id="@+id/ui_middle_layout"
+                android:layout_below="@+id/ui_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/linear_backgraound">
+
+                <Spinner
+                    android:id="@+id/ui_list_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                </Spinner>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ui_middle_layout"
+                android:background="@drawable/linear_backgraound"
+                android:layout_margin="15dp"
+                >
+
+                <EditText
+                    android:id="@+id/ui_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:minHeight="45dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Add Description..."
+                    android:gravity="start"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:inputType="textMultiLine"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/font_regular"
+                    android:background="@null"
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <uz.itmaker.naft.Activites.WrapContentListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:divider="@null"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/ui_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fdp_fourtyfive"
+                        android:text="Send Now"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginBottom="@dimen/dp_fifteen"
+                        android:background="@drawable/complete_button_layout"
+                        android:padding="@dimen/dp_five"
+                        android:elevation="10dp"
+                        android:layout_gravity="left"
+                        android:gravity="center" />
+
+                    <Button
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/ui_select_file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/fdp_fourtyfive"
+                        android:text="Select File"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/font_medium"
+                        android:layout_marginBottom="@dimen/dp_fifteen"
+                        android:background="@drawable/selectbutton_layout"
+                        android:padding="@dimen/dp_five"
+                        android:elevation="10dp"
+                        android:layout_gravity="right"
+                        android:gravity="center" />
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+           <RelativeLayout
+            android:id="@+id/ui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ProgressBar
+                android:id="@+id/ui_bookloading"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:background="@drawable/circle_shape"
+                android:elevation="10dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+</RelativeLayout>

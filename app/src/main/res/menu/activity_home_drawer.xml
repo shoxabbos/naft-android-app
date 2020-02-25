@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/nav_dashboard_item"
+        android:textAlignment="viewStart"
+        android:textDirection="locale"
+        android:title="Профиль">
+
+        <menu>
+            <group android:id="@+id/nav_dashboard" android:checkableBehavior="none">
+                <item android:id="@+id/nav_camera" android:icon="@drawable/ic_home_black_24dp"
+                    android:title="Авторизоваться" />
+                <item android:id="@+id/nav_fav" android:icon="@drawable/ic_favorite_black_24dp"
+                    android:title="Избранные" />
+                <item
+                    android:id="@+id/nav_post_job"
+                    android:icon="@drawable/ic_file_upload_black_24dp"
+                    android:title="Добавить работу"
+                    />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Общее"
+        android:textAlignment="viewStart"
+        android:textDirection="locale">
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/about_us"
+
+                    android:icon="@drawable/ic_public_black_24dp"
+                    android:title="О нас" />
+
+                <item
+                    android:id="@+id/ui_rate_us"
+                    android:icon="@drawable/ic_thumb_up_black_24dp"
+                    android:title="Оценить приложению" />
+
+                <item
+                    android:id="@+id/nav_invite"
+                    android:icon="@drawable/ic_email_black_24dp"
+                    android:title="Пригласить друзей"
+                    />
+                <item
+                    android:id="@+id/nav_Contact_support"
+
+                    android:icon="@drawable/ic_help_black_24dp"
+                    android:title="Служба поддержки" />
+
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"
+                    android:title="Выйти"
+                    />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

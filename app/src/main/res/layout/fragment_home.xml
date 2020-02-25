@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/fdp_fourtyfive"
+    android:background="#fafafa"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <ScrollView
+        android:id="@+id/ui_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ui_home_main_layout"
+            android:layout_marginBottom="100px"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/ui_relative_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#6F000000"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:id="@+id/ui_main_text_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="80dp"
+                    android:text="@string/home_main_text"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/font_medium"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_below="@+id/ui_main_text_home"
+                    android:id="@+id/ui_home_sec_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:text="@string/home_main_text_sec"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_thirteen"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/ui_home_sec_text"
+                    android:layout_marginTop="@dimen/dp_fifteen"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/shimmer_recycler_view_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:shimmer_demo_child_count="3"
+                        app:shimmer_demo_grid_child_count="3"
+                        app:shimmer_demo_layout="@layout/layout_demo_category"
+                        app:shimmer_demo_layout_manager_type="grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ui_sec_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ui_relative_layout"
+                >
+
+                <TextView
+                    android:id="@+id/ui_featured_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="62px"
+                    android:layout_marginLeft="10px"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#323232"
+                    android:text="@string/featured_text"/>
+                <TextView
+                    android:id="@+id/ui_featured_text_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ui_featured_text"
+                    android:layout_marginLeft="10px"
+                    android:textSize="@dimen/dp_thirteen"
+                    android:textColor="#767676"
+                    android:text="@string/featured_text_sec"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/ui_featured_text_sec"
+                    android:layout_marginTop="@dimen/dp_fifteen"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="5px"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/shimmer_recycler_view_featured"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:shimmer_demo_child_count="2"
+                        app:shimmer_demo_grid_child_count="2"
+                        app:shimmer_demo_layout="@layout/layout_demo_grid"
+                        app:shimmer_demo_angle="20"
+                        />
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ui_latest_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ui_sec_relative_layout">
+
+                <TextView
+                    android:id="@+id/ui_latest_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="62px"
+                    android:layout_marginLeft="10px"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="#323232"
+                    android:text="Последние опубликованные вакансии"/>
+
+                <TextView
+                    android:id="@+id/ui_latest_text_sec"
+                    android:layout_below="@+id/ui_latest_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:textSize="13dp"
+                    android:textColor="#767676"
+                    android:text="Начните сегодня"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/ui_latest_text_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="10px"
+                        android:layout_marginBottom="32px"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/shimmer_recycler_view_latest_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:shimmer_demo_child_count="3"
+                            app:shimmer_demo_grid_child_count="3"
+                            app:shimmer_demo_layout="@layout/layout_demo_category"
+                            app:shimmer_demo_layout_manager_type="grid"
+                            app:shimmer_demo_angle="20"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
